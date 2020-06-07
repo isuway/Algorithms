@@ -13,13 +13,18 @@ namespace DFS
                 (1, 2), (1, 3), (2, 4), (3, 5), (3, 6), (4, 7),
                 (5, 7), (5, 8), (5, 6), (8, 9), (9, 10), (10, 11)
             };
-            var graph = new Graph<int>(vertices, edges);
-            var alg = new DFS();
             
+            var graph = new Graph<int>(vertices, edges);
+            var dfs = new DFS();
+
             // to maintain order of results
-            var path = new List<int>();
-            var result = alg.Execute(graph, 1, z => path.Add(z));
-            Console.WriteLine(string.Join(", ", path));
+            var orderedResult = new List<int>();
+            
+            var result = dfs.Execute(graph, 1, z => orderedResult.Add(z));
+            
+            Console.WriteLine(string.Join(", ", orderedResult));
+            
+            // result must be:  1, 3, 6, 5, 8, 9, 10, 11, 7, 4, 2
         }
     }
 }
