@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace DFS
 {
@@ -14,8 +15,11 @@ namespace DFS
             };
             var graph = new Graph<int>(vertices, edges);
             var alg = new DFS();
-            var result = alg.Execute(graph, 1);
-            Console.WriteLine(string.Join(", ", alg.Execute(graph, 1)));
+            
+            // to maintain order of results
+            var path = new List<int>();
+            var result = alg.Execute(graph, 1, z => path.Add(z));
+            Console.WriteLine(string.Join(", ", path));
         }
     }
 }
