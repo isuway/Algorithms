@@ -4,6 +4,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algorithms", "Algorithms\Al
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DFS", "DFS\DFS.csproj", "{AAB1E169-569F-4E90-800F-EF8CD3E45B39}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BFS", "BFS\BFS.csproj", "{1CBB51CA-48B0-45C2-8767-8BF04ACA4629}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GraphCommon", "GraphCommon\GraphCommon.csproj", "{897EB1E5-6AE0-452F-89FD-C50A56FC2D70}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +22,13 @@ Global
 		{AAB1E169-569F-4E90-800F-EF8CD3E45B39}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AAB1E169-569F-4E90-800F-EF8CD3E45B39}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AAB1E169-569F-4E90-800F-EF8CD3E45B39}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1CBB51CA-48B0-45C2-8767-8BF04ACA4629}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1CBB51CA-48B0-45C2-8767-8BF04ACA4629}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1CBB51CA-48B0-45C2-8767-8BF04ACA4629}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1CBB51CA-48B0-45C2-8767-8BF04ACA4629}.Release|Any CPU.Build.0 = Release|Any CPU
+		{897EB1E5-6AE0-452F-89FD-C50A56FC2D70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{897EB1E5-6AE0-452F-89FD-C50A56FC2D70}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{897EB1E5-6AE0-452F-89FD-C50A56FC2D70}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{897EB1E5-6AE0-452F-89FD-C50A56FC2D70}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

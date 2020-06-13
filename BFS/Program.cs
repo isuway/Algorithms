@@ -1,8 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
 using GraphCommon;
+using Microsoft.VisualBasic;
 
-namespace DFS
+namespace BFS
 {
     class Program
     {
@@ -16,16 +16,11 @@ namespace DFS
             };
             
             var graph = new Graph<int>(vertices, edges);
-            var dfs = new DFS();
+            var bfs = new BFS();
 
-            // to maintain order of results
-            var orderedResult = new List<int>();
-            
-            var result = dfs.Execute(graph, 1, z => orderedResult.Add(z));
-            
-            Console.WriteLine(string.Join(", ", orderedResult));
-            
-            // result must be:  1, 3, 6, 5, 8, 9, 10, 11, 7, 4, 2
+            var result =  bfs.Execute(graph, 1);
+            Console.WriteLine(string.Join(", ", result));
+            // result must be: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11
         }
     }
 }

@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace DFS
+namespace GraphCommon
 {
     public class Graph<T>
     {
