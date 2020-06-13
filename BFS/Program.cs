@@ -18,9 +18,17 @@ namespace BFS
             var graph = new Graph<int>(vertices, edges);
             var bfs = new BFS();
 
-            var result =  bfs.Execute(graph, 1);
+            var result =  bfs.VisitAll(graph, 1);
             Console.WriteLine(string.Join(", ", result));
             // result must be: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11
+
+            // find shortest paths
+            var from = 1;
+            foreach (var vertex in vertices)
+            {
+                var path = bfs.ShortestPath(graph, from, vertex);
+                Console.WriteLine(path.Item1 + ": " + string.Join(", ", path.Item2));
+            }
         }
     }
 }
